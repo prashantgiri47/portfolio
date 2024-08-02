@@ -7,21 +7,38 @@
     <!-- <meta name="description" content="Start your development with Meyawo landing page."> -->
     <meta charset="utf-8">
     <link rel="icon" type="image/x-icon" href="assets/imgs/favicon.png">
-    <meta property="og:title" content="Prashant Giri ! Athlete">
-    <meta property="title" content="Prashant Giri ! Athlete">
-     <meta property="og:description" content=" Hey there, I'm Prashant Giri , a passionate athlete in my 16 years who loves rocking it on the football field, mastering kabaddi as an all-rounder, and showing off my bowling skills in cricket. I've snagged my fair share of medals and certificates, and I'm especially proud of leading my team to victory in district-level kabaddi matches. Join me on this exciting sports journey where every game is an adventure!">
-     <meta property="description" content=" Hey there, I'm Prashant Giri , a passionate athlete in my 16 years who loves rocking it on the football field, mastering kabaddi as an all-rounder, and showing off my bowling skills in cricket. I've snagged my fair share of medals and certificates, and I'm especially proud of leading my team to victory in district-level kabaddi matches. Join me on this exciting sports journey where every game is an adventure!">
-     <meta property="image" content="https://photos.google.com/search/_cAF1QipOEJaTNAlVVWOkMAXppFGBkcgpYjv8k-SI_Prashant%20/photo/AF1QipMKD2Oezl9uKIxBW9q1P9RA4ag0f7xvCxAj5z3q">
+    <meta property="og:title" content="Prashant Giri - Kabaddi Player & Multi-Sport Athlete">
+    <meta property="og:description" content="Hi, I'm Prashant Giri, a 16-year-old athlete passionate about kabaddi, futsal, football, and cricket. Discover my journey and achievements as a young player across these sports.">
+    <meta property="og:image" content="https://giriprashant.com.np/assets/imgs/prashant1.jpg">
+    <meta property="og:url" content="https://www.example.com">
+    <meta name="description" content="Hi, I'm Prashant Giri, a 16-year-old athlete passionate about kabaddi, futsal, football, and cricket. Discover my journey and achievements as a young player across these sports.">
+    <meta name="og:description" content="Hi, I'm Prashant Giri, a 16-year-old athlete passionate about kabaddi, futsal, football, and cricket. Discover my journey and achievements as a young player across these sports.">  
     <meta name="viewport" content="width=device-width">
-    <meta name="keywords" content="prashant giri,giri prashant, kabaddi player prashant giri , babai gaunpalika kabaddi champions , mourighat prashant giri">
+    <meta name="keywords" content="prashant giri,giri prashant, kabaddi player prashant giri , babai gaunpalika kabaddi champions , mourighat prashant giri , Prashant Giri, Prashant Giri athlete, Prashant Giri kabaddi, Prashant Giri futsal , football, Prashant Giri cricket, Prashant Giri achievements, young athlete Prashant Giri">
     <meta name="author" content="Prashant Giri">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="site.webmanifest">
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <meta name="author" content="Devcrud">
     <title>Prashant | Giri</title>
+    <script>
+        let isPrashantGiri = true;
+
+        function toggleTitle() {
+            if (isPrashantGiri) {
+                document.title = "Athlete";
+            } else {
+                document.title = "Prashant Giri";
+            }
+            isPrashantGiri = !isPrashantGiri;
+        }
+
+        window.onload = function() {
+            setInterval(toggleTitle, 4000);
+        };
+    </script>
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
@@ -180,11 +197,11 @@
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/portfolio1.jpg" class="img-responsive rounded"
+                        <img class="portfolio-card-img" src="assets/imgs/prashant.png" class="img-responsive rounded"
                             alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Kirtipur</h5>
+                                <h4>Imadol</h5>
                                     <p class="font-weight-normal">Crazy hair, don't care.</p>
                             </span>
                         </span>
@@ -403,23 +420,22 @@
             <p class="section-subtitle">How can you communicate?</p>
             <h6 class="section-title mb-5">Contact Me</h6>
             <!-- contact form -->
-            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+            <form action="" class="contact-form col-md-10 col-lg-8 m-auto" id="contactForm">
                 <div class="form-row">
                     <div class="form-group col-sm-6">
                         <input type="text" size="50" class="form-control" placeholder="Your Name" required>
                     </div>
                     <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" placeholder="Enter Email" requried>
+                        <input type="email" class="form-control" placeholder="Enter Email" required>
                     </div>
                     <div class="form-group col-sm-12">
-                        <textarea name="comment" id="comment" rows="6" class="form-control"
-                            placeholder="Write Something"></textarea>
+                        <textarea name="comment" id="comment" rows="6" class="form-control" placeholder="Write Something"></textarea>
                     </div>
                     <div class="form-group col-sm-12 mt-3">
                         <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
                     </div>
                 </div>
-            </form><!-- end of contact form -->
+            </form> <!--end of for -->
         </div><!-- end of container -->
     </section><!-- end of contact section -->
 
@@ -451,7 +467,19 @@
 
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
 
-</body>
+            Swal.fire({
+                title: 'Message Sent!',
+                text: 'Your message has been successfully sent.',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            });
+        });
+    </script>
+   
 
 </html>
