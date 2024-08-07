@@ -10,7 +10,8 @@
     <meta property="og:title" content="Prashant Giri - Kabaddi Player & Multi-Sport Athlete">
     <meta property="og:description" content="Hi, I'm Prashant Giri, a 16-year-old athlete passionate about kabaddi, futsal, football, and cricket. Discover my journey and achievements as a young player across these sports.">
     <meta property="og:image" content="https://giriprashant.com.np/assets/imgs/prashant1.jpg">
-    <meta property="og:url" content="https://www.example.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta property="og:url" content="https://www.giriprashant.com.np">
     <meta name="description" content="Hi, I'm Prashant Giri, a 16-year-old athlete passionate about kabaddi, futsal, football, and cricket. Discover my journey and achievements as a young player across these sports.">
     <meta name="og:description" content="Hi, I'm Prashant Giri, a 16-year-old athlete passionate about kabaddi, futsal, football, and cricket. Discover my journey and achievements as a young player across these sports.">  
     <meta name="viewport" content="width=device-width">
@@ -36,7 +37,7 @@
         }
 
         window.onload = function() {
-            setInterval(toggleTitle, 4000);
+            setInterval(toggleTitle, 2000);
         };
     </script>
     <!-- font icons -->
@@ -50,7 +51,9 @@
     <!-- Page Navbar -->
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="logo" href="index.html">Prashant</a>
+            <a id="changing-text" class="logo" href="index.html">Prashant</a>
+
+    
             <ul class="nav">
                 <li class="item">
                     <a class="link" href="index.html">Home</a>
@@ -81,7 +84,8 @@
             </a>
         </div>
     </nav><!-- End of Page Navbar -->
-
+    
+    
     <!-- page header -->
     <header id="home" class="header">
         <div class="overlay"></div>
@@ -92,9 +96,52 @@
             </h1>
             <p class="header-subtitle">All Rounder Player</p>
 
-            <a href="https://www.facebook.com/profile.php?id=100077195384513"><button class="btn btn-primary">Follow Me</button></a>
+            <a href="https://www.instagram.com/giriprashant47" target="_blank">
+                <button class="btn btn-primary">Follow Me</button>
+            </a>
+            
         </div>
     </header><!-- end of page header -->
+
+        <!-- Start of Tidio Chat Script -->
+        <script src="//code.tidio.co/zx2qkrw9esdw52ruyuluypgcvqgk7vqg.js" async></script>
+        <!-- End of Tidio Chat Script -->
+
+    <!-- Scroll to top -->
+    <button class="scroll-to-top" id="scrollToTopBtn">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    <script>
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) { // Show button when scrolled down 200px
+        scrollToTopBtn.classList.add('show');
+    } else {
+        scrollToTopBtn.classList.remove('show');
+    }
+});
+
+scrollToTopBtn.addEventListener('click', () => {
+    // Add animation class
+    scrollToTopBtn.classList.add('scrolling');
+
+    // Scroll to the top with a delay to allow animation to finish
+    setTimeout(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Smooth scroll to top
+        });
+
+        // Remove animation class after scrolling to the top
+        setTimeout(() => {
+            scrollToTopBtn.classList.remove('scrolling');
+        }, 600); // Ensure this matches the duration of your animation
+    }, 0); // No delay needed here
+});
+
+    </script>
+     <!-- end page scroll to top -->
 
     <!-- about section -->
     <section class="section pt-0" id="about">
@@ -112,7 +159,7 @@
                     <p>
                         Hey there, I'm Prashant Giri , a passionate athlete in my 16 years who loves rocking it on the football field, mastering kabaddi as an all-rounder, and showing off my bowling skills in cricket. I've snagged my fair share of medals and certificates, and I'm especially proud of leading my team to victory in district-level kabaddi matches. Join me on this exciting sports journey where every game is an adventure!
                     </p>
-                 <a href="https://www.facebook.com/profile.php?id=100077195384513"   ><button class="btn-rounded btn btn-outline-primary mt-4">Join me</button></a>
+                 <a href="https://www.facebook.com/prashantgiri47"   ><button class="btn-rounded btn btn-outline-primary mt-4">Join me</button></a>
                 </div>
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
@@ -447,11 +494,12 @@
                     href="https://girisushant.com.np">Shushant Giri</a>
             </p>
             <div class="social-links text-right m-auto ml-sm-auto">
-                <a href="https://www.facebook.com/profile.php?id=100077195384513" class="link"><i class="ti-facebook"></i></a>
+                <a href="https://www.facebook.com/prashantgiri47" class="link" target="_blank"><i class="ti-facebook"></i></a>
                 <!-- <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a> -->
                 <!-- <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a> -->
                 <!-- <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a> -->
-                <a href="https://www.instagram.com/prashant__giri__/" class="link"><i class="ti-instagram"></i></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=giriprashant088@gmail.com" class="link" target="_blank"><i class="ti-email"></i></a>
+                <a href="https://www.instagram.com/giriprashant47/" class="link" target="_blank"><i class="ti-instagram"></i></a>
                 <!-- <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a> -->
             </div>
         </footer>
